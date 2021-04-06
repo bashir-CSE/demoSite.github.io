@@ -30,7 +30,7 @@
   nav .linkSec {
     position: absolute;
     height: 100vh;
-    width: 100%;
+    width: 70%;
     padding: 1rem;
     top: 8vh;
     right: 0px;
@@ -43,8 +43,8 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 3rem !important;
-    -webkit-transform: translateX(600%);
-            transform: translateX(600%);
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
     -webkit-transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
