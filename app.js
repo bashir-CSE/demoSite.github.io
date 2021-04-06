@@ -4,8 +4,8 @@ $(".owl-carousel").owlCarousel({
 	margin: 10,
 	autoplay: true,
 	rtl: true,
-	autoplayTimeout: 2000,
-	autoplayHoverPause: false,
+	autoplayTimeout: 4000,
+	autoplayHoverPause: true,
 	nav: false,
 	dots: false,
 	responsive: {
@@ -26,17 +26,19 @@ $(".slider").slick({
 	slidesToShow: 4,
 	slidesToScroll: 1,
 	autoplay: true,
-	autoplaySpeed: 700,
+	autoplaySpeed: 3000,
+	pauseOnHover: true,
 	dots: true,
 	infinite: true,
-	speed: 700,
-	centerMode: true,
-	centerPadding: "50px",
+	infinite: true,
+	speed: 1000,
+	centerMode: false,
+	centerPadding: "60px",
 	responsive: [
 		{
 			breakpoint: 768,
 			settings: {
-				arrows: true,
+				arrows: false,
 				centerMode: true,
 				centerPadding: "40px",
 				slidesToShow: 2,
@@ -45,9 +47,9 @@ $(".slider").slick({
 		{
 			breakpoint: 480,
 			settings: {
-				arrows: true,
-				centerMode: true,
-				centerPadding: "30px",
+				arrows: false,
+				centerMode: false,
+				centerPadding: "40px",
 				slidesToShow: 1,
 			},
 		},
@@ -56,7 +58,7 @@ $(".slider").slick({
 // hamburger menue
 const LinkSection = document.querySelector(".linkSec");
 const ham = document.querySelector(".bars");
-ham.addEventListener("click", () => {
+ham.addEventListener("click", function () {
 	LinkSection.classList.toggle("linkSecShow");
 });
 
