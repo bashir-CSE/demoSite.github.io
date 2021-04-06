@@ -29,7 +29,7 @@ $(".slider").slick({
 	autoplaySpeed: 700,
 	dots: true,
 	infinite: true,
-	speed: 900,
+	speed: 700,
 	centerMode: true,
 	centerPadding: "50px",
 	responsive: [
@@ -47,7 +47,7 @@ $(".slider").slick({
 			settings: {
 				arrows: true,
 				centerMode: true,
-				centerPadding: "50px",
+				centerPadding: "30px",
 				slidesToShow: 1,
 			},
 		},
