@@ -43,8 +43,8 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 3rem !important;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateX(600%);
+            transform: translateX(600%);
     -webkit-transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
