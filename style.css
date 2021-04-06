@@ -272,8 +272,8 @@ footer .container #icon .fab {
 
 .upArrow {
   position: fixed;
-  -webkit-transform: translateX(200%);
-          transform: translateX(200%);
+  -webkit-transform: translateX(600%);
+          transform: translateX(600%);
   right: 60px;
   bottom: 60px;
   font-size: 2rem;
