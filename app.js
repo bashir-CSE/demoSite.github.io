@@ -4,7 +4,7 @@ $(".owl-carousel").owlCarousel({
 	margin: 10,
 	autoplay: true,
 	rtl: true,
-	autoplayTimeout: 3000,
+	autoplayTimeout: 2000,
 	autoplayHoverPause: false,
 	nav: false,
 	dots: false,
@@ -27,9 +27,9 @@ $(".slider").slick({
 	slidesToScroll: 1,
 	autoplay: true,
 	autoplaySpeed: 700,
-	dots: false,
+	dots: true,
 	infinite: true,
-	speed: 700,
+	speed: 900,
 	centerMode: true,
 	centerPadding: "50px",
 	responsive: [
@@ -47,7 +47,7 @@ $(".slider").slick({
 			settings: {
 				arrows: true,
 				centerMode: true,
-				centerPadding: "30px",
+				centerPadding: "50px",
 				slidesToShow: 1,
 			},
 		},
@@ -56,7 +56,7 @@ $(".slider").slick({
 // hamburger menue
 const LinkSection = document.querySelector(".linkSec");
 const ham = document.querySelector(".bars");
-ham.addEventListener("click", function () {
+ham.addEventListener("click", () => {
 	LinkSection.classList.toggle("linkSecShow");
 });
 
