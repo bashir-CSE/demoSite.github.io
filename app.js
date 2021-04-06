@@ -4,8 +4,8 @@ $(".owl-carousel").owlCarousel({
 	margin: 10,
 	autoplay: true,
 	rtl: true,
-	autoplayTimeout: 4000,
-	autoplayHoverPause: true,
+	autoplayTimeout: 3000,
+	autoplayHoverPause: false,
 	nav: false,
 	dots: false,
 	responsive: {
@@ -26,13 +26,12 @@ $(".slider").slick({
 	slidesToShow: 4,
 	slidesToScroll: 1,
 	autoplay: true,
-	autoplaySpeed: 1000,
+	autoplaySpeed: 700,
 	dots: false,
 	infinite: true,
-	infinite: true,
-	speed: 800,
+	speed: 700,
 	centerMode: true,
-	centerPadding: "60px",
+	centerPadding: "50px",
 	responsive: [
 		{
 			breakpoint: 768,
@@ -48,7 +47,7 @@ $(".slider").slick({
 			settings: {
 				arrows: true,
 				centerMode: true,
-				centerPadding: "40px",
+				centerPadding: "30px",
 				slidesToShow: 1,
 			},
 		},
