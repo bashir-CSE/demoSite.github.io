@@ -197,12 +197,12 @@ nav .linkSec a {
 }
 
 .team .slider .item {
-	height: 360px;
+	height: 380px;
 	margin: 0 10px;
 }
 
 .team .slider .item .teamPic {
-	height: 80%;
+	height: 90%;
 	border-radius: 50%;
 }
 
