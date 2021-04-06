@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+$latterSpace: 5px;
+// mixin
+@mixin h1 {
+	font-size: 2.7rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: $latterSpace;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	button,
+	input {
+		border-radius: 0px !important;
+	}
+}
+body {
+	font-family: "Josefin Sans", sans-serif !important;
+	position: relative;
+	overflow-x: hidden !important;
+}
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.container {
+	padding: 2rem 3rem;
+}
+.scroll {
+	background-color: #ffffff;
+	padding: 1rem 0;
+	color: black;
+	font-weight: 500;
+	box-shadow: 0px 2px 10px #b4adadc5;
+	.heading {
+		font-size: 1.3rem;
+		letter-spacing: 2px;
+		transition: all 0.5s ease-in-out;
+	}
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	background-color: #6366f1;
+	width: 100vw;
+	height: 8vh;
+	align-items: center;
+	z-index: 200;
+	transition: all 0.5s ease-in-out;
+	color: white;
+	padding: 2rem 0;
+	font-weight: 600;
+	.heading {
+		font-size: 1.5rem;
+		letter-spacing: 3px;
+		cursor: pointer;
+		user-select: none;
+		&:hover {
+			color: #e4e4e4;
+		}
+	}
+	.bars {
+		display: none;
+		cursor: pointer;
+	}
+	.linkSec {
+		a {
+			letter-spacing: 2px;
+		}
+	}
+}
+.heroSection {
+	.owl-theme {
+		position: relative;
+		top: 8vh;
+		.item {
+			height: 92vh;
+			width: 100%;
+		}
+	}
+	.owl-carousel::after {
+		position: absolute;
+		display: block;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-image: linear-gradient(
+			rgba(0, 0, 0, 0.7),
+			rgba(0, 0, 0, 0.7),
+			rgba(0, 0, 0, 0.7)
+		);
+		content: "";
+		height: 100%;
+		width: 100%;
+		z-index: 20;
+	}
+	.content {
+		user-select: none;
+		position: absolute;
+		display: block;
+		top: 12%;
+		left: 50%;
+		text-align: center;
+		height: 30vh;
+		max-width: 80%;
+		margin: 0 auto;
+		transform: translate(-50%, -50%);
+		z-index: 100;
+		h1 {
+			@include h1;
+		}
+		p {
+			font-size: 1.1rem;
+			font-weight: 400;
+		}
+	}
+}
+
+// gallery
+.gallery {
+	padding-top: 3rem;
+	.gTitle {
+		text-align: center;
+		h1 {
+			@include h1;
+		}
+	}
+}
+// testimonials
+#test {
+	.content {
+		text-align: center;
+		padding-bottom: 2rem;
+		h1 {
+			@include h1;
+		}
+	}
+}
+// team section
+.team {
+	.teamHeader {
+		text-align: center;
+		h1 {
+			@include h1;
+		}
+	}
+	.slider {
+		.item {
+			height: 360px;
+			margin: 0 10px;
+
+			.teamPic {
+				height: 80%;
+				border-radius: 50%;
+				img {
+					height: 100% !important;
+					width: 100% !important;
+				}
+			}
+			.teamContent {
+				text-align: center;
+				p {
+					font-size: 1.5rem;
+					font-weight: 500;
+					text-transform: capitalize;
+				}
+				button {
+					background-color: #6366f1;
+					margin: auto 0;
+					padding: 0 2rem;
+					border-radius: 3px;
+					cursor: pointer;
+					height: 24px;
+					color: rgb(255, 255, 255);
+					font-weight: 600;
+					text-transform: capitalize;
+				}
+			}
+		}
+		.slick-prev {
+			left: 4px;
+			height: 2rem;
+			width: 2rem;
+			z-index: 100;
+		}
+		.slick-next {
+			right: 4px;
+			height: 2rem;
+			width: 2rem;
+			z-index: 100;
+		}
+	}
+}
+
+#contact {
+	.contactHeader {
+		text-align: center;
+		h1 {
+			@include h1;
+		}
+	}
+}
+// fotter section
+footer {
+	.container {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		align-items: center;
+		#icon {
+			display: flex !important;
+			gap: 1.3rem !important;
+			.fab {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+.upArrow {
+	position: fixed;
+	transform: translateX(-1000%);
+	right: 60px;
+	bottom: 60px;
+	font-size: 1.5rem;
+	z-index: 600;
+	background-color: #6366f1;
+	font-weight: 900;
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: whitesmoke;
+	border-radius: 10px;
+	transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	a {
+		text-decoration: none;
+		.far {
+			line-height: 45px;
+		}
+	}
+}
+.arrow {
+	display: flex;
+	visibility: visible;
+	cursor: pointer;
+	user-select: none;
+	transform: translateX(0%);
+}

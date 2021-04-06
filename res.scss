@@ -1,0 +1,157 @@
+@media (max-width: 575.98px) {
+	$latterSpace: 5px;
+	@mixin h1 {
+		font-size: 2rem;
+		letter-spacing: $latterSpace;
+	}
+	.container {
+		padding: 2rem 1rem !important;
+	}
+	.scroll {
+		.bars {
+			color: black;
+			top: 17px;
+		}
+		.linkSec {
+			top: 8vh !important;
+		}
+		.heading {
+			color: black;
+		}
+	}
+	nav {
+		.heading {
+			@include h1;
+			color: white;
+			font-weight: 600;
+			letter-spacing: 2px !important;
+		}
+		.bars {
+			display: block;
+			position: absolute;
+			top: 18px;
+			right: 43px;
+			color: rgb(255, 255, 255);
+			font-size: 1.3rem;
+		}
+		.linkSec {
+			position: absolute;
+			height: 100vh;
+			width: 70%;
+			padding: 1rem;
+			top: 8vh;
+			right: 0px;
+			background-color: #6366f1;
+			display: flex;
+			flex-direction: column;
+			gap: 1.2rem !important;
+			transform: translateX(200%);
+			transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+			a {
+				border-bottom: 1px solid #9590908c;
+				font-size: 1.2rem;
+				font-weight: 500;
+				color: whitesmoke;
+				cursor: pointer;
+				user-select: none;
+				padding: 0.3rem 0;
+				letter-spacing: 1px;
+				&:hover {
+					color: rgb(94, 91, 91);
+				}
+			}
+		}
+		.linkSecShow {
+			transform: translateX(0%);
+		}
+	}
+	// hero section
+	.heroSection {
+		.owl-theme {
+			position: relative;
+			top: 8vh;
+			.item {
+				height: 85vh;
+			}
+		}
+		.content {
+			top: 4.5%;
+			height: 1vh;
+			max-width: 90% !important;
+			width: 100% !important;
+			h1 {
+				@include h1;
+			}
+			p {
+				font-size: 1rem;
+				font-weight: 500;
+				padding: 1rem 0;
+			}
+		}
+	}
+	// gallery
+	.gallery {
+		padding-top: 3rem !important;
+		.gPic {
+			padding: 0 !important;
+		}
+		.gTitle {
+			h1 {
+				@include h1;
+			}
+		}
+	}
+	// testimonials
+	#test {
+		.content {
+			padding: 1rem 0 !important;
+			h1 {
+				@include h1;
+				letter-spacing: 0px !important;
+			}
+		}
+	}
+	// team section
+	.team {
+		.teamHeader {
+			h1 {
+				@include h1;
+				letter-spacing: 0px !important;
+			}
+		}
+		.slider {
+			.item {
+				height: 320px;
+
+				.teamPic {
+					height: 70%;
+				}
+			}
+		}
+	}
+	// contact section
+	#contact {
+		.contactHeader {
+			h1 {
+				@include h1;
+				letter-spacing: 0px !important;
+			}
+		}
+	}
+	// fotter section
+	footer {
+		.container {
+			flex-direction: column;
+			button {
+				margin: 1rem 0 !important;
+			}
+			#icon {
+				margin-top: 10px;
+			}
+		}
+	}
+	.upArrow {
+		right: 39px;
+		bottom: 35px;
+	}
+}
