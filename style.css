@@ -283,16 +283,16 @@ footer .container #icon .fab {
 
 .upArrow {
 	position: fixed;
-	-webkit-transform: translateX(600%);
-	transform: translateX(600%);
+	-webkit-transform: translateX(-1000%);
+	transform: translateX(-1000%);
 	right: 60px;
 	bottom: 60px;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	z-index: 600;
 	background-color: #6366f1;
 	font-weight: 900;
-	height: 43px;
-	width: 43px;
+	height: 40px;
+	width: 40px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -303,13 +303,21 @@ footer .container #icon .fab {
 	-ms-flex-align: center;
 	align-items: center;
 	color: whitesmoke;
-	border-radius: 12px;
+	border-radius: 10px;
 	-webkit-transition: -webkit-transform 0.9s
 		cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55),
 		-webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.upArrow a {
+	text-decoration: none;
+}
+
+.upArrow a .far {
+	line-height: 45px;
 }
 
 .arrow {
