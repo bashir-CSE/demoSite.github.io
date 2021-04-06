@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- tailwind CSS -->
+		<link
+			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<!-- fontawesome icon pack -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+		/>
+
+		<!-- owl -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+			crossorigin="anonymous"
+		/>
+		<!-- slick -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+			integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+			integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+			crossorigin="anonymous"
+		/>
+		<!-- custom css -->
+		<link rel="stylesheet" href="./style.css" />
+		<!-- responsive css file -->
+		<link rel="stylesheet" href="./res.css" />
+		<title>new project</title>
+	</head>
+	<body id="home">
+		<!-- Navbar section -->
+		<nav>
+			<div>
+				<span class="heading">Showrav</span>
+			</div>
+			<div class="linkSec">
+				<a href="#home" class="mr-5 hover:text-gray-200">Home</a>
+				<a href="#G" class="mr-5 hover:text-gray-200">Gallery</a>
+				<a href="#test" class="mr-5 hover:text-gray-200">Testimonials</a>
+				<a href="#team" class="mr-5 hover:text-gray-200">Team</a>
+				<a href="#contact" class="mr-5 hover:text-gray-200">Contact</a>
+			</div>
+			<div class="bars">
+				<i class="fas fa-bars"></i>
+			</div>
+		</nav>
+		<!-- owl hero section -->
+		<section class="pb-10 heroSection">
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<img src="./img/office1.jpg" />
+				</div>
+				<div class="item">
+					<img src="./img/office2.jpg" />
+				</div>
+				<div class="item">
+					<img src="./img/office3.jpg" />
+				</div>
+				<div class="item">
+					<img src="./img/office4.jpg" />
+				</div>
+			</div>
+			<div class="content">
+				<h1 class="text-gray-300">hero section</h1>
+				<p class="text-gray-200">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+					cum aperiam enim numquam, consequatur optio magnam ducimus quasi ab
+					placeat, illo modi quae quisquam aliquid beatae error, ea aspernatur
+					ut.
+				</p>
+				<button
+					class="flex mx-auto mt-2 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+				>
+					Button
+				</button>
+			</div>
+		</section>
+		<!-- gallery -->
+		<section id="G" class="container gallery mx-auto">
+			<div class="gTitle">
+				<h1 class="text-gray-700">gallery</h1>
+				<p class="text-gray-500 max-w-3xl mx-auto">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad similique
+					consequatur, aliquam dolor at libero sed harum autem hic rem inventore
+				</p>
+			</div>
+			<div class="gPic flex flex-wrap py-10">
+				<div class="lg:w-1/3 sm:w-1/2 p-4">
+					<div class="flex relative">
+						<img
+							alt="gallery"
+							class="absolute inset-0 w-full h-full object-cover object-center"
+							src="./img/g3.jpg"
+						/>
+						<div
+							class="px-8 py-10 relative z-10 w-full border-2 border-gray-200 bg-white opacity-0 transition-all duration-300 hover:opacity-100"
+						>
+							<h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+								Shooting Stars
+							</h1>
+							<p class="leading-relaxed">
+								Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+								microdosing tousled waistcoat.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="lg:w-1/3 sm:w-1/2 p-4">
+					<div class="flex relative">
+						<img
+							alt="gallery"
+							class="absolute inset-0 w-full h-full object-cover object-center"
+							src="./img/g4.jpg"
+						/>
+						<div
+							class="px-8 py-10 relative z-10 w-full border-2 border-gray-200 bg-white opacity-0 transition-all duration-300 hover:opacity-100"
+						>
+							<h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+								Shooting Stars
+							</h1>
+							<p class="leading-relaxed">
+								Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+								microdosing tousled waistcoat.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="lg:w-1/3 sm:w-1/2 p-4">
+					<div class="flex relative">
+						<img
+							alt="gallery"
+							class="absolute inset-0 w-full h-full object-cover object-center"
+							src="./img/g5.jpg"
+						/>
+						<div
+							class="px-8 py-10 relative z-10 w-full border-2 border-gray-200 bg-white opacity-0 transition-all duration-300 hover:opacity-100"
+						>
+							<h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+								Shooting Stars
+							</h1>
+							<p class="leading-relaxed">
+								Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+								microdosing tousled waistcoat.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="lg:w-1/3 sm:w-1/2 p-4">
+					<div class="flex relative">
+						<img
+							alt="gallery"
+							class="absolute inset-0 w-full h-full object-cover object-center"
+							src="./img/g2.jpg"
+						/>
+						<div
+							class="px-8 py-10 relative z-10 w-full border-2 border-gray-200 bg-white opacity-0 transition-all duration-300 hover:opacity-100"
+						>
+							<h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+								Shooting Stars
+							</h1>
+							<p class="leading-relaxed">
+								Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+								microdosing tousled waistcoat.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="lg:w-1/3 sm:w-1/2 p-4">
+					<div class="flex relative">
+						<img
+							alt="gallery"
+							class="absolute inset-0 w-full h-full object-cover object-center"
+							src="./img/g6.jpg"
+						/>
+						<div
+							class="px-8 py-10 relative z-10 w-full border-2 border-gray-200 bg-white opacity-0 transition-all duration-300 hover:opacity-100"
+						>
+							<h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+								Shooting Stars
+							</h1>
+							<p class="leading-relaxed">
+								Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+								microdosing tousled waistcoat.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="lg:w-1/3 sm:w-1/2 p-4">
+					<div class="flex relative">
+						<img
+							alt="gallery"
+							class="absolute inset-0 w-full h-full object-cover object-center"
+							src="./img/g2.jpg"
+						/>
+						<div
+							class="px-8 py-10 relative z-10 w-full border-2 border-gray-200 bg-white opacity-0 transition-all duration-300 hover:opacity-100"
+						>
+							<h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+								Shooting Stars
+							</h1>
+							<p class="leading-relaxed">
+								Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+								microdosing tousled waistcoat.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- testimonials -->
+		<section id="test" class="container mx-auto text-gray-600 body-font">
+			<div class="container px-5 pb-24 mx-auto">
+				<div class="content">
+					<h1 class="text-gray-700">testimonials</h1>
+					<p class="text-gray-500 max-w-3xl mx-auto">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+						similique consequatur, aliquam dolor at libero sed harum autem hic
+						rem inventore
+					</p>
+				</div>
+				<div class="flex flex-wrap -m-4">
+					<div class="p-4 md:w-1/2 w-full">
+						<div class="h-full bg-gray-100 p-8 rounded">
+							<p class="leading-relaxed mb-6">
+								Synth chartreuse iPhone lomo cray raw denim brunch everyday
+								carry neutra before they sold out fixie 90's microdosing. Tacos
+								pinterest fanny pack venmo, post-ironic heirloom try-hard pabst
+								authentic iceland.
+							</p>
+							<a class="inline-flex items-center">
+								<img
+									alt="testimonial"
+									src="./img/g7.jpg"
+									class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+								/>
+								<span class="flex-grow flex flex-col pl-4">
+									<span class="title-font font-medium text-gray-900"
+										>Holden Caulfield</span
+									>
+									<span class="text-gray-500 text-sm">UI DEVELOPER</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="p-4 md:w-1/2 w-full">
+						<div class="h-full bg-gray-100 p-8 rounded">
+							<p class="leading-relaxed mb-6">
+								Synth chartreuse iPhone lomo cray raw denim brunch everyday
+								carry neutra before they sold out fixie 90's microdosing. Tacos
+								pinterest fanny pack venmo, post-ironic heirloom try-hard pabst
+								authentic iceland.
+							</p>
+							<a class="inline-flex items-center">
+								<img
+									alt="testimonial"
+									src="./img/p3.jpeg"
+									class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+								/>
+								<span class="flex-grow flex flex-col pl-4">
+									<span class="title-font font-medium text-gray-900"
+										>Alper Kamu</span
+									>
+									<span class="text-gray-500 text-sm">DESIGNER</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- team slider -->
+		<section class="container mx-auto team" id="team">
+			<div class="teamHeader mx-auto">
+				<h1 class="text-gray-700">meet my team</h1>
+				<p class="text-gray-500 max-w-3xl pb-10 mx-auto">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+					nam, harum voluptate sequi natus placeat officiis impedit! Sapiente
+					ullam molestias vitae fugiat obcaecati voluptatem sit! Omnis
+					perspiciatis laudantium ea laboriosam!
+				</p>
+			</div>
+			<div class="slider p-2">
+				<div class="item">
+					<div class="teamPic">
+						<img src="./img/p1.jpeg" alt="" srcset="" />
+					</div>
+					<div class="teamContent">
+						<p class="text-gray-500">jhone doe</p>
+						<button>Hire him</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="teamPic">
+						<img src="./img/g7.jpg" alt="" srcset="" />
+					</div>
+					<div class="teamContent">
+						<p class="text-gray-500">jhone doe</p>
+						<button>Hire him</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="teamPic">
+						<img src="./img/p3.jpeg" alt="" srcset="" />
+					</div>
+					<div class="teamContent">
+						<p class="text-gray-500">jhone doe</p>
+						<button>Hire him</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="teamPic">
+						<img src="./img/p4.jpeg" alt="" srcset="" />
+					</div>
+					<div class="teamContent">
+						<p class="text-gray-500">jhone doe</p>
+						<button>Hire him</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="teamPic">
+						<img src="./img/p5.jpeg" alt="" srcset="" />
+					</div>
+					<div class="teamContent">
+						<p class="text-gray-500">jhone doe</p>
+						<button>Hire him</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="teamPic">
+						<img src="./img/p6.jpeg" alt="" srcset="" />
+					</div>
+					<div class="teamContent">
+						<p class="text-gray-500">jhone doe</p>
+						<button>Hire him</button>
+					</div>
+				</div>
+				<div class="item">
+					<div class="teamPic">
+						<img src="./img/face-4.jpg" alt="" srcset="" />
+					</div>
+					<div class="teamContent">
+						<p class="text-gray-500">jhone doe</p>
+						<button>Hire him</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- contact section -->
+		<section id="contact" class="container text-gray-600 body-font relative">
+			<div class="contactHeader pt-2 mx-auto">
+				<h1 class="text-gray-700">contact us</h1>
+				<p class="text-gray-500 max-w-3xl mx-auto">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+					nam, harum voluptate sequi natus placeat officiis impedit! Sapiente
+					ullam molestias vitae fugiat obcaecati voluptatem sit! Omnis
+					perspiciatis laudantium ea laboriosam!
+				</p>
+			</div>
+			<div class="container px-5 py-24 mx-auto">
+				<div class="lg:w-1/2 md:w-2/3 mx-auto">
+					<div class="flex flex-wrap -m-2">
+						<div class="p-2 md:w-1/2 lg:w-1/2 w-full">
+							<div class="relative">
+								<label for="name" class="leading-7 text-sm text-gray-600"
+									>Name</label
+								>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									class="w-full bg-gray-100 bg-opacity-50 border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+									placeholder="your name"
+								/>
+							</div>
+						</div>
+						<div class="p-2 md:w-1/2 lg:w-1/2 w-full">
+							<div class="relative">
+								<label for="email" class="leading-7 text-sm text-gray-600"
+									>Email</label
+								>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									class="w-full bg-gray-100 bg-opacity-50 border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+									placeholder="your email"
+								/>
+							</div>
+						</div>
+						<div class="p-2 w-full">
+							<div class="relative">
+								<label for="message" class="leading-7 text-sm text-gray-600"
+									>Message</label
+								>
+								<textarea
+									id="message"
+									name="message"
+									class="w-full bg-gray-100 bg-opacity-50 border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+									placeholder="message"
+								></textarea>
+							</div>
+						</div>
+						<div class="p-2 w-full">
+							<button
+								class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+							>
+								Button
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- fotter -->
+		<footer class="mx-auto text-gray-600 body-font bg-gray-100">
+			<div class="border-gray-200">
+				<div class="container px-5 py-8">
+					<div
+						class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start"
+					>
+						<div class="relative sm:w-64 md:w-64 w-3/4 sm:mr-4 mr-2">
+							<label for="footer-field" class="leading-7 text-sm text-gray-600"
+								>Subscribe Us</label
+							>
+							<input
+								type="text"
+								id="footer-field"
+								name="footer-field"
+								class="w-full bg-gray-100 bg-opacity-50 border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+								placeholder="enter your email"
+							/>
+						</div>
+						<button
+							class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
+						>
+							Subscribe
+						</button>
+					</div>
+					<div id="icon">
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-github"></i>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- up arrow button -->
+		<div class="upArrow">
+			<a href="#home">
+				<i class="far fa-arrow-alt-circle-up"></i>
+			</a>
+		</div>
+
+		<!-- Initialize owl -->
+		<script src="jquery.min.js"></script>
+		<script src="owlcarousel/owl.carousel.min.js"></script>
+		<!-- jqery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- owl js -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+			integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+			crossorigin="anonymous"
+		></script>
+		<!-- slick -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+			integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+			crossorigin="anonymous"
+		></script>
+
+		<!-- custom javascript -->
+		<script src="./app.js"></script>
+	</body>
+</html>
