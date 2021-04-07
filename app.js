@@ -23,7 +23,7 @@ $(".owl-carousel").owlCarousel({
 
 // slick slider
 $(".slider").slick({
-	slidesToShow: 4,
+	slidesToShow: 3,
 	slidesToScroll: 1,
 	autoplay: true,
 	autoplaySpeed: 3000,
@@ -33,7 +33,7 @@ $(".slider").slick({
 	infinite: true,
 	speed: 1000,
 	centerMode: true,
-	centerPadding: "60px",
+	centerPadding: "80px",
 	responsive: [
 		{
 			breakpoint: 768,
