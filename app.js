@@ -32,7 +32,7 @@ $(".slider").slick({
 	infinite: true,
 	infinite: true,
 	speed: 1000,
-	centerMode: false,
+	centerMode: true,
 	centerPadding: "60px",
 	responsive: [
 		{
@@ -48,7 +48,7 @@ $(".slider").slick({
 			breakpoint: 480,
 			settings: {
 				arrows: false,
-				centerMode: false,
+				centerMode: true,
 				centerPadding: "40px",
 				slidesToShow: 1,
 			},
@@ -58,7 +58,7 @@ $(".slider").slick({
 // hamburger menue
 const LinkSection = document.querySelector(".linkSec");
 const ham = document.querySelector(".bars");
-ham.addEventListener("click", function () {
+ham.addEventListener("click", () => {
 	LinkSection.classList.toggle("linkSecShow");
 });
 
